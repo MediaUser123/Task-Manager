@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/todayFragment"
+        android:icon="@drawable/today_ic"
+        android:title="Today" />
+    <item
+        android:id="@+id/goalsFragment"
+        android:icon="@drawable/goals_ic"
+        android:title="Goals" />
+    <item
+        android:id="@+id/activitesFragment"
+        android:icon="@drawable/activites_ic"
+        android:title="Activites" />
+    <item
+        android:id="@+id/journalFragment"
+        android:icon="@drawable/journal_ic"
+        android:title="Journal" />
+    <item
+        android:id="@+id/moreFragment"
+        android:icon="@drawable/more_ic"
+        android:title="More" />
+
+</menu>
