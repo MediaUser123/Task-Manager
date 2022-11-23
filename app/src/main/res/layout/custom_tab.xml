@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+
+        <RelativeLayout
+            android:layout_marginTop="3dp"
+            android:id="@+id/parnt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            >
+
+            <ImageView
+                android:id="@+id/tabicon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="0dp"
+                android:src="@drawable/today_ic" />
+            <ImageView
+                android:id="@+id/tabicon3"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="0dp"
+                android:visibility="gone"
+                android:src="@drawable/today_ic" />
+
+
+
+
+
+            <ImageView
+                android:id="@+id/tabicon2"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="0dp"
+                android:src="@drawable/add_ic"
+                android:visibility="gone"/>
+
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/tablabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="More"
+                android:textColor="@color/black"
+                android:textSize="10dp"
+                android:gravity="center"
+                />
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

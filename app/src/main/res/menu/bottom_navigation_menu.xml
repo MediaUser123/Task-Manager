@@ -15,7 +15,7 @@
         android:title="Activites" />
     <item
         android:id="@+id/journalFragment"
-        android:icon="@drawable/journal_ic"
+        android:icon="@drawable/file_ic"
         android:title="Journal" />
     <item
         android:id="@+id/moreFragment"
