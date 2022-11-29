@@ -20,6 +20,10 @@ class MainActivity : AppCompatActivity() {
 
         binding=ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        val navHostFragment =
+            supportFragmentManager.findFragmentById(R.id.fragmentContainerView) as NavHostFragment
+        val navController = navHostFragment.navController
+        binding.bottomNavigation.setupWithNavController(navController)
 
         binding.pager.setOffscreenPageLimit(4)
         binding.tabLayout.addTab(binding.tabLayout.newTab().setCustomView(R.layout.custom_tab).setIcon(R.drawable.today_ic))

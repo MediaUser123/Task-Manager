@@ -14,10 +14,12 @@ class TodayFragment : Fragment() {
     lateinit var binding: FragmentTodayBinding
     lateinit var adapter: TodayTaskAdapter
     var arraylist: ArrayList<todayModel> = arrayListOf()
+
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         // Inflate the layout_bg for this fragment
         binding = FragmentTodayBinding.inflate(inflater, container, false)
         binding.rcv.layoutManager = LinearLayoutManager(context)
@@ -49,7 +51,7 @@ class TodayFragment : Fragment() {
                 "",
                 "",
 
-                R . drawable . mask_ic,
+                R.drawable.mask_ic,
             )
         )
         arraylist.add(
@@ -61,10 +63,12 @@ class TodayFragment : Fragment() {
                 "Every Day",
                 "",
                 "",
-                R . drawable . mask_ic,
+                R.drawable.mask_ic,
 
-            )
+                )
         )
     }
 
+
 }
+

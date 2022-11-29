@@ -9,6 +9,16 @@
     <color name="white">#FFFFFFFF</color>
     <color name="blue">#38A1F3</color>
     <color name="dark_gray">#707070</color>
+    <color name="light_gray">#F2F3F6</color>
+
     <color name="view_color">#AEAEAE</color>
     <color name="light_blue">#D6E4F2</color>
+
+    <color name="gray">#F2F4F7</color>
+    <color name="gray_dark">#CAC6CB</color>
+    <color name="view">#DCDCDC</color>
+    <color name="of_white">#F6F6F6</color>
+    <color name="stroke">#BEBEBE</color>
+
+
 </resources>
