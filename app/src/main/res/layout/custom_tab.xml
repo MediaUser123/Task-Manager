@@ -28,7 +28,7 @@
                 android:layout_height="20dp"
                 android:layout_alignParentTop="true"
                 android:layout_marginTop="0dp"
-                android:src="@drawable/today_ic" />
+                android:src="@drawable/more_ic" />
             <ImageView
                 android:id="@+id/tabicon3"
                 android:layout_width="20dp"

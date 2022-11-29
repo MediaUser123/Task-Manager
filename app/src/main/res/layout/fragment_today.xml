@@ -23,7 +23,7 @@
             android:layout_height="match_parent">
 
             <ImageView
-                android:id="@+id/threedot"
+                android:id="@+id/addimg"
                 android:layout_width="@dimen/_14sdp"
                 android:layout_height="@dimen/_14sdp"
                 android:layout_alignParentEnd="true"
@@ -37,7 +37,7 @@
                 android:layout_height="@dimen/_14sdp"
                 android:layout_centerVertical="true"
                 android:layout_marginEnd="@dimen/_12sdp"
-                android:layout_toLeftOf="@id/threedot"
+                android:layout_toLeftOf="@id/addimg"
                 android:src="@drawable/filter_ic"
                 app:tint="@color/white" />
         </RelativeLayout>
@@ -97,6 +97,7 @@
         android:weightSum="2">
 
         <LinearLayout
+            android:id="@+id/routinelayout"
             android:layout_width="0dp"
             android:layout_height="@dimen/_36sdp"
             android:layout_marginEnd="@dimen/_3sdp"
@@ -138,6 +139,7 @@
 
         <LinearLayout
             android:layout_width="0dp"
+            android:id="@+id/routinelayout2"
             android:layout_height="@dimen/_36sdp"
             android:layout_marginStart="@dimen/_3sdp"
             android:layout_weight="1"
