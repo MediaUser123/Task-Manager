@@ -92,7 +92,8 @@
             android:fontFamily="@font/poppins_regular"
             android:hint="Enter Activity"
             android:textColor="@color/view_color"
-            android:textSize="@dimen/_10ssp" />
+            android:textSize="@dimen/_10ssp"
+            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
     </RelativeLayout>
 </androidx.cardview.widget.CardView>
 <androidx.cardview.widget.CardView
@@ -109,16 +110,16 @@
         android:background="@drawable/layout_bg2">
 
 
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginStart="@dimen/_10sdp"
-        android:background="@null"
-        android:fontFamily="@font/poppins_regular"
-        android:hint="Enter Note"
-        android:textColor="@color/view_color"
-        android:textSize="@dimen/_10ssp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:background="@null"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="Enter Note"
+            android:textColor="@color/view_color"
+            android:textSize="@dimen/_10ssp"
+            tools:ignore="TouchTargetSizeCheck" />
 
     </RelativeLayout>
 </androidx.cardview.widget.CardView>

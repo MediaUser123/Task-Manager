@@ -1,29 +1,25 @@
 package com.taskmanagment.app.Activities
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.taskmanagment.app.R
 import com.taskmanagment.app.databinding.ActivityAddGoalBinding
-import com.taskmanagment.app.databinding.ActivitySetGoalBinding
+import com.taskmanagment.app.databinding.ActivityAddNoteBinding
 
-class SetGoalActivity : AppCompatActivity() {
-    lateinit var binding: ActivitySetGoalBinding
+class AddNoteActivity : AppCompatActivity() {
+    lateinit var binding: ActivityAddNoteBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivitySetGoalBinding.inflate(layoutInflater)
+        binding = ActivityAddNoteBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
 
         binding.arrowBack.setOnClickListener {
             finish()
         }
 
-        binding.nextScreen.setOnClickListener {
-            startActivity(Intent(this,
-                MilestonesActivity::class.java))
+        binding.nextLayout.setOnClickListener {
+            finish()
         }
-
     }
 }

@@ -20,6 +20,10 @@ class MilestonesActivity : AppCompatActivity() {
         setContentView(binding.root)
 
 
+        binding.arrowBack.setOnClickListener {
+            finish()
+        }
+
         binding.addNewMilestones.setOnClickListener {
             startActivity(Intent(this,
                 AddMilestoneActivity::class.java))
