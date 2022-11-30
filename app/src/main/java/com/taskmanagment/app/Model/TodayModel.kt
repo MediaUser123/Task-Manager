@@ -1,4 +1,4 @@
-package com.taskmanagment.app
+package com.taskmanagment.app.Model
 
 data class todayModel(
     var Tittle: String,

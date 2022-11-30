@@ -14,21 +14,34 @@
         <entry key="..\:/Users/pc/AndroidStudioProjects/TaskManagment/app/src/main/res/drawable/layout_bg5.xml" value="0.126" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/TaskManagment/app/src/main/res/drawable/layout_bg6.xml" value="0.126" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/TaskManagment/app/src/main/res/drawable/layout_bg7.xml" value="0.126" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/TaskManagment/app/src/main/res/drawable/layout_bg8.xml" value="0.126" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/TaskManagment/app/src/main/res/drawable/rel_layout_bg.xml" value="0.126" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/TaskManagment/app/src/main/res/drawable/text_bg.xml" value="0.126" />
-        <entry key="..\:/Users/pc/AndroidStudioProjects/TaskManagment/app/src/main/res/layout/activity_add.xml" value="0.22" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/TaskManagment/app/src/main/res/layout/activity_add.xml" value="0.2" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/TaskManagment/app/src/main/res/layout/activity_add_question.xml" value="0.2" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/TaskManagment/app/src/main/res/layout/activity_create_password.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/TaskManagment/app/src/main/res/layout/activity_evening_routine.xml" value="0.18" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/TaskManagment/app/src/main/res/layout/activity_forget_pasword.xml" value="0.18" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/TaskManagment/app/src/main/res/layout/activity_login.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/TaskManagment/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/TaskManagment/app/src/main/res/layout/activity_morning_routine.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/TaskManagment/app/src/main/res/layout/activity_my_plan.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/TaskManagment/app/src/main/res/layout/activity_otp_verification.xml" value="0.2" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/TaskManagment/app/src/main/res/layout/activity_plan_my_day.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/TaskManagment/app/src/main/res/layout/activity_sign_up.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/TaskManagment/app/src/main/res/layout/activity_splash.xml" value="0.16" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/TaskManagment/app/src/main/res/layout/activity_start.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/TaskManagment/app/src/main/res/layout/custom_tab.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/pc/AndroidStudioProjects/TaskManagment/app/src/main/res/layout/fragment_activites.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/TaskManagment/app/src/main/res/layout/fragment_activites.xml" value="0.18" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/TaskManagment/app/src/main/res/layout/fragment_goals.xml" value="0.1" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/TaskManagment/app/src/main/res/layout/fragment_more.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/pc/AndroidStudioProjects/TaskManagment/app/src/main/res/layout/fragment_today.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/TaskManagment/app/src/main/res/layout/fragment_to_do.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/TaskManagment/app/src/main/res/layout/fragment_today.xml" value="0.2" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/TaskManagment/app/src/main/res/layout/item_add_goal.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/TaskManagment/app/src/main/res/layout/item_layout_routine.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/TaskManagment/app/src/main/res/layout/item_layout_to_do.xml" value="0.2" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/TaskManagment/app/src/main/res/layout/item_layout_today_task.xml" value="0.22" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/TaskManagment/app/src/main/res/layout/item_milestones.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/TaskManagment/app/src/main/res/layout/popup_activity.xml" value="0.25" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/TaskManagment/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.20416666666666666" />
       </map>

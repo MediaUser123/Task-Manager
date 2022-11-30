@@ -11,8 +11,8 @@
         android:id="@+id/clockimg"
         android:layout_width="@dimen/_90sdp"
         android:layout_height="@dimen/_90sdp"
-        android:src="@drawable/stop_watch"
-        android:layout_centerInParent="true"/>
+        android:layout_centerInParent="true"
+        android:src="@drawable/stop_watch" />
     <TextView
         android:layout_below="@id/clockimg"
         android:id="@+id/topView"

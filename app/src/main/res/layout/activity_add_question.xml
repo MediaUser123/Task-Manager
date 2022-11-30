@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@color/light_blue"
-    tools:context=".StartActivity">
+    android:orientation="vertical"
+    tools:context=".Activities.AddQuestionActivity">
     <androidx.cardview.widget.CardView
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
@@ -41,78 +41,62 @@
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
                 android:fontFamily="@font/poppins_medium"
-                android:text="Timekeeper"
+                android:text="Add Questions"
                 android:textColor="@color/black"
-                android:textSize="@dimen/_12ssp" />
-            <TextView
-                android:id="@+id/doneText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_centerVertical="true"
-                android:layout_marginEnd="@dimen/_10sdp"
-                android:fontFamily="@font/poppins_medium"
-                android:text="Done"
-                android:textColor="@color/blue"
+                android:includeFontPadding="false"
                 android:textSize="@dimen/_12ssp" />
 
         </RelativeLayout>
 
 
     </androidx.cardview.widget.CardView>
-    <View
-        android:id="@+id/view1"
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Question"
+        android:textColor="@color/black"
+        android:includeFontPadding="false"
+        android:textSize="@dimen/_11ssp" />
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_30sdp"
-        android:layout_below="@id/toolbar"/>
-    <TextView
-        android:id="@+id/tv_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/poppins_regular"
-        android:text="Look For Insurance "
-        android:layout_below="@id/view1"
-        android:layout_centerHorizontal="true"
-        android:includeFontPadding="false"
-        android:layout_gravity="center_horizontal"
-        android:textColor="@color/black"
-        android:textSize="@dimen/_13ssp" />
+        android:layout_height="@dimen/_34sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        app:cardCornerRadius="@dimen/_5sdp"
+        app:cardElevation="0dp"
+        app:cardMaxElevation="0dp">
+        <EditText
+            android:id="@+id/edt_user"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_toRightOf="@id/user_ic"
+            android:background="@null"
+            android:hint="Add Question"
+            android:fontFamily="@font/poppins_light"
+            android:includeFontPadding="false"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/_11ssp" />
 
-<ImageView
-    android:layout_width="@dimen/_100sdp"
-    android:layout_height="@dimen/_100sdp"
-    android:layout_gravity="center"
-    android:layout_centerInParent="true"
-    android:src="@drawable/timekeeper"/>
-<androidx.cardview.widget.CardView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_above="@id/btnlogin"
-    app:cardCornerRadius="@dimen/_25sdp"
-    android:layout_marginBottom="@dimen/_30sdp"
-    android:layout_centerHorizontal="true">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/poppins_regular"
-        android:text="0 min"
-        android:paddingHorizontal="@dimen/_15sdp"
-        android:paddingVertical="@dimen/_7sdp"
-        android:layout_below="@id/view1"
-        android:layout_centerHorizontal="true"
-        android:includeFontPadding="false"
-        android:layout_gravity="center_horizontal"
-        android:textColor="@color/black"
-        android:textSize="@dimen/_13ssp" />
-
-</androidx.cardview.widget.CardView>
+    </androidx.cardview.widget.CardView>
+<View
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_30sdp"/>
     <androidx.cardview.widget.CardView
         android:id="@+id/btnlogin"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_36sdp"
-        android:layout_alignParentBottom="true"
         android:layout_marginHorizontal="@dimen/_20sdp"
-        android:layout_marginBottom="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_25sdp"
         android:foreground="?attr/selectableItemBackground"
         app:cardBackgroundColor="@color/blue"
         app:cardCornerRadius="@dimen/_7sdp"
@@ -129,7 +113,7 @@
                 android:layout_gravity="center"
                 android:fontFamily="@font/poppins_semibold"
                 android:includeFontPadding="false"
-                android:text="Start"
+                android:text="Add"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
                 android:textSize="@dimen/_13sdp" />
@@ -138,4 +122,4 @@
 
     </androidx.cardview.widget.CardView>
 
-</RelativeLayout>
+</LinearLayout>

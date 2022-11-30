@@ -1,4 +1,4 @@
-package com.taskmanagment.app
+package com.taskmanagment.app.Adapters
 
 import android.app.Dialog
 import android.content.Context
@@ -17,15 +17,16 @@ import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.taskmanagment.app.Model.todayModel
+import com.taskmanagment.app.R
 
 
-class TodayTaskAdapter(
+class TodayTaskAdapter2(
     val context: Context,
     val List: ArrayList<todayModel>,
-) : RecyclerView.Adapter<TodayTaskAdapter.MyViewHolder>() {
+) : RecyclerView.Adapter<TodayTaskAdapter2.MyViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
         val inflater = LayoutInflater.from(parent.context)
-        val view = inflater.inflate(R.layout.item_layout_today_task, parent, false)
+        val view = inflater.inflate(R.layout.item_layout_to_do, parent, false)
         return MyViewHolder(view)
     }
 
@@ -39,22 +40,7 @@ class TodayTaskAdapter(
         holder.time2.text=list.Time2
         holder.image.setImageResource(list.Image)
 
-        holder.layout3.setOnClickListener {
-            holder.image2.visibility = View.VISIBLE
-            holder.layout3.setBackgroundResource(R.drawable.back_square2)
-        }
-        holder.layout4.setOnClickListener {
-            holder.image3.visibility = View.VISIBLE
-            holder.layout4.setBackgroundResource(R.drawable.back_square2)
-        }
-        holder.layout1.setOnClickListener {
-            holder.image4.visibility = View.VISIBLE
-            holder.layout1.setBackgroundResource(R.drawable.back_square2)
 
-        }
-        holder.moreText.setOnClickListener {
-            showPopup()
-        }
     }
 
     override fun getItemCount(): Int {
@@ -70,13 +56,7 @@ class TodayTaskAdapter(
         val time1 = itemView.findViewById<TextView>(R.id.subtasktiming1)
         val time2 = itemView.findViewById<TextView>(R.id.subtasktiming2)
         val image = itemView.findViewById<ImageView>(R.id.iv_profile)
-        val image2 = itemView.findViewById<ImageView>(R.id.tick)
-        val image3 = itemView.findViewById<ImageView>(R.id.tick2)
-        val image4 = itemView.findViewById<ImageView>(R.id.tick3)
-        val layout3 = itemView.findViewById<RelativeLayout>(R.id.layout3)
-        val layout4 = itemView.findViewById<RelativeLayout>(R.id.layout4)
-        val layout1 = itemView.findViewById<RelativeLayout>(R.id.layout1)
-        val moreText = itemView.findViewById<RelativeLayout>(R.id.moreText)
+
 //        val parentLayout = itemView.findViewById<CardView>(R.id.cardview)
 
     }
@@ -92,21 +72,6 @@ class TodayTaskAdapter(
         )
         dialog.setCanceledOnTouchOutside(true)
         val imageView=dialog.findViewById(R.id.clossimg) as CardView
-        val subtask=dialog.findViewById(R.id.subtaskText) as TextView
-        val startText=dialog.findViewById(R.id.startText) as TextView
-        val editText=dialog.findViewById(R.id.editText) as TextView
-        imageView.setOnClickListener { dialog.dismiss() }
-
-        subtask.setOnClickListener {
-            context.startActivity(Intent(context,SubtaskActivity::class.java))
-        }
-        startText.setOnClickListener {
-            context.startActivity(Intent(context,StartActivity::class.java))
-        }
-        editText.setOnClickListener {
-            context.startActivity(Intent(context,AddActivity::class.java))
-        }
-
         imageView.setOnClickListener { dialog.dismiss() }
         dialog.show()
 

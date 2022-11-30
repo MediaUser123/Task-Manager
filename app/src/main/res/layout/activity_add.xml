@@ -109,16 +109,15 @@
         android:background="@drawable/layout_bg2">
 
 
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginStart="@dimen/_10sdp"
-        android:background="@null"
-        android:fontFamily="@font/poppins_regular"
-        android:hint="Enter Note"
-        android:textColor="@color/view_color"
-        android:textSize="@dimen/_10ssp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:background="@null"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="Enter Note"
+            android:textColor="@color/view_color"
+            android:textSize="@dimen/_10ssp" />
 
     </RelativeLayout>
 </androidx.cardview.widget.CardView>
@@ -148,14 +147,15 @@
             android:text="Sub - Tasks"
             android:textColor="@color/view_color"
             android:textSize="@dimen/_10ssp" />
+
         <ImageView
             android:layout_width="@dimen/_12sdp"
             android:layout_height="@dimen/_12sdp"
-            app:tint="@color/view_color"
-            android:layout_centerVertical="true"
             android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
             android:layout_marginEnd="@dimen/_15sdp"
-            android:src="@drawable/add_ic" />
+            android:src="@drawable/add_ic"
+            app:tint="@color/view_color" />
 
     </RelativeLayout>
 
@@ -194,6 +194,7 @@
             android:textSize="@dimen/_10ssp" />
 
         <TextView
+            android:id="@+id/dateText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
@@ -208,7 +209,7 @@
             android:id="@+id/calLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:visibility="visible"
+            android:visibility="gone"
             android:orientation="vertical">
 
 
@@ -218,6 +219,7 @@
             android:layout_marginTop="@dimen/_5sdp"
             android:layout_marginHorizontal="@dimen/_15sdp"
             android:weightSum="2"
+            android:layout_marginBottom="@dimen/_10sdp"
             android:orientation="horizontal">
             <LinearLayout
                 android:id="@+id/onetimelayout"
@@ -276,7 +278,7 @@
             android:layout_below="@id/lay1"
             android:layout_marginTop="@dimen/_7sdp"
             android:layout_marginHorizontal="@dimen/_15sdp"
-            android:visibility="gone"
+            android:visibility="visible"
             android:layout_marginBottom="@dimen/_10sdp"
             android:orientation="horizontal"
             android:weightSum="3">
@@ -343,7 +345,7 @@
 <CalendarView
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:visibility="gone"
+    android:visibility="visible"
     android:id="@+id/calenderview"/>
         </LinearLayout>
 
@@ -351,7 +353,7 @@
         android:id="@+id/reLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:visibility="visible"
+        android:visibility="gone"
         android:orientation="vertical">
 
         <LinearLayout
@@ -366,6 +368,7 @@
             android:orientation="horizontal"
             android:weightSum="2">
             <LinearLayout
+                android:id="@+id/layoutT"
                 android:layout_width="0dp"
                 android:layout_height="@dimen/_25sdp"
                 android:gravity="center"
@@ -373,6 +376,7 @@
                 android:background="@drawable/layout_bg4"
                 android:layout_weight="1">
                 <TextView
+                    android:id="@+id/textTime1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:includeFontPadding="false"
@@ -383,6 +387,7 @@
 
             </LinearLayout>
             <LinearLayout
+                android:id="@+id/layoutW"
                 android:layout_width="0dp"
                 android:layout_height="@dimen/_25sdp"
                 android:gravity="center"
@@ -390,6 +395,7 @@
                 android:background="@drawable/layout_bg4"
                 android:layout_weight="1">
                 <TextView
+                    android:id="@+id/textTime2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:includeFontPadding="false"
@@ -411,6 +417,7 @@
             android:orientation="horizontal"
             android:weightSum="2">
             <LinearLayout
+                android:id="@+id/layoutM"
                 android:layout_width="0dp"
                 android:layout_height="@dimen/_25sdp"
                 android:gravity="center"
@@ -418,6 +425,7 @@
                 android:background="@drawable/layout_bg4"
                 android:layout_weight="1">
                 <TextView
+                    android:id="@+id/textTime3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:includeFontPadding="false"
@@ -428,6 +436,7 @@
 
             </LinearLayout>
             <LinearLayout
+                android:id="@+id/layoutS"
                 android:layout_width="0dp"
                 android:layout_height="@dimen/_25sdp"
                 android:gravity="center"
@@ -435,6 +444,7 @@
                 android:background="@drawable/layout_bg4"
                 android:layout_weight="1">
                 <TextView
+                    android:id="@+id/textTime4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:includeFontPadding="false"
@@ -456,6 +466,7 @@
             android:orientation="horizontal"
             android:weightSum="2">
             <LinearLayout
+                android:id="@+id/layoutY"
                 android:layout_width="0dp"
                 android:layout_height="@dimen/_25sdp"
                 android:gravity="center"
@@ -463,6 +474,7 @@
                 android:background="@drawable/layout_bg4"
                 android:layout_weight="1">
                 <TextView
+                    android:id="@+id/textTime5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:includeFontPadding="false"
@@ -474,6 +486,14 @@
             </LinearLayout>
 
         </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:id="@+id/layoutweekedays">
+
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -509,6 +529,7 @@
                     android:layout_height="@dimen/_12sdp"
                     android:layout_centerInParent="true"
                     android:visibility="gone"
+                    app:tint="@color/white"
                     android:layout_gravity="center_vertical"
                     android:src="@drawable/ic_checkmark" />
 
@@ -542,6 +563,7 @@
                     android:layout_height="@dimen/_12sdp"
                     android:layout_centerInParent="true"
                     android:visibility="gone"
+                    app:tint="@color/white"
                     android:layout_gravity="center_vertical"
                     android:src="@drawable/ic_checkmark" />
 
@@ -575,6 +597,7 @@
                     android:layout_height="@dimen/_12sdp"
                     android:layout_centerInParent="true"
                     android:visibility="gone"
+                    app:tint="@color/white"
                     android:layout_gravity="center_vertical"
                     android:src="@drawable/ic_checkmark" />
 
@@ -608,6 +631,7 @@
                     android:layout_height="@dimen/_12sdp"
                     android:layout_centerInParent="true"
                     android:visibility="gone"
+                    app:tint="@color/white"
                     android:layout_gravity="center_vertical"
                     android:src="@drawable/ic_checkmark" />
 
@@ -641,6 +665,7 @@
                     android:layout_height="@dimen/_12sdp"
                     android:layout_centerInParent="true"
                     android:visibility="gone"
+                    app:tint="@color/white"
                     android:layout_gravity="center_vertical"
                     android:src="@drawable/ic_checkmark" />
 
@@ -674,6 +699,7 @@
                     android:layout_height="@dimen/_12sdp"
                     android:layout_centerInParent="true"
                     android:visibility="gone"
+                    app:tint="@color/white"
                     android:layout_gravity="center_vertical"
                     android:src="@drawable/ic_checkmark" />
 
@@ -707,6 +733,7 @@
                     android:layout_height="@dimen/_12sdp"
                     android:layout_centerInParent="true"
                     android:visibility="gone"
+                    app:tint="@color/white"
                     android:layout_gravity="center_vertical"
                     android:src="@drawable/ic_checkmark" />
 
@@ -714,6 +741,36 @@
             </LinearLayout>
         </LinearLayout>
 
+            <RelativeLayout
+                android:id="@+id/rellayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:background="@drawable/rel_layout_bg">
+                <TextView
+                    android:id="@+id/perdaytext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Time Per Day"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_9ssp" />
+                <TextView
+                    android:id="@+id/counttext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="1"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_toLeftOf="@id/perdaytext"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_9ssp" />
+
+            </RelativeLayout>
+        </LinearLayout>
     </LinearLayout>
     </LinearLayout>
 
@@ -721,16 +778,24 @@
 </androidx.cardview.widget.CardView>
 <androidx.cardview.widget.CardView
     android:layout_width="match_parent"
-    android:layout_height="@dimen/_36sdp"
+    android:layout_height="wrap_content"
     android:layout_marginTop="@dimen/_10sdp"
     android:layout_marginHorizontal="@dimen/_15sdp"
     app:cardCornerRadius="@dimen/_5sdp"
     android:elevation="0dp"
     app:cardElevation="0dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_bg2"
+        android:orientation="vertical">
+
+
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/layout_bg">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp">
 
 
         <TextView
@@ -744,16 +809,47 @@
             android:text="Time"
             android:textColor="@color/view_color"
             android:textSize="@dimen/_10ssp" />
-        <ImageView
-            android:layout_width="@dimen/_12sdp"
-            android:layout_height="@dimen/_12sdp"
-            app:tint="@color/view_color"
-            android:layout_centerVertical="true"
+
+        <TextView
+            android:id="@+id/timetext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
             android:layout_marginEnd="@dimen/_15sdp"
-            android:src="@drawable/add_ic" />
+            android:includeFontPadding="false"
+            android:text="11:06 PM"
+            android:textColor="@color/black" />
 
     </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/timepickerlayoout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_marginTop="20dp">
+
+        <TimePicker
+            android:id="@+id/timePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:timePickerMode="spinner"/>
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_13ssp"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:textColor="@color/blue"
+            android:gravity="end"
+            android:layout_gravity="end"
+            android:text="@string/timeset"
+        />
+    </LinearLayout> </LinearLayout>
 
 
 </androidx.cardview.widget.CardView>

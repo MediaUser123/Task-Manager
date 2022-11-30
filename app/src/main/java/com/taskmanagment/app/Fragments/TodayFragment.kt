@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.taskmanagment.app.*
+import com.taskmanagment.app.Model.todayModel
 import com.taskmanagment.app.databinding.FragmentTodayBinding
 
 class TodayFragment : Fragment() {

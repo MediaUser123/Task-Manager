@@ -5,6 +5,6 @@
 
     <string name="lorem">lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</string>
     <string name="milestones">Add all intermediate goals (milestones) that need to be accomplished to achieve the long-term goal.</string>
-
+    <string name="timeset">unset</string>
     <string name="start_goal">The best way to achieve your Long-term goal is by\nsetting a few Milestones, creating an Action Plan,\nand schedule all supporting Routines</string>
 </resources>
