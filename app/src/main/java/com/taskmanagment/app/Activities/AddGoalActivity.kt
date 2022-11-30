@@ -20,6 +20,10 @@ class AddGoalActivity : AppCompatActivity() {
         binding = ActivityAddGoalBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        binding.arrowBack.setOnClickListener {
+            finish()
+        }
+
         binding.nextLayout.setOnClickListener {
             startActivity(Intent(this,
                 SetGoalActivity::class.java))

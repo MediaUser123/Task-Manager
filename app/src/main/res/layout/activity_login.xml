@@ -75,7 +75,7 @@
                 app:tint="@color/blue" />
 
             <EditText
-                android:id="@+id/edt_email"
+                android:id="@+id/edtuser"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_10sdp"
@@ -94,6 +94,7 @@
         </RelativeLayout>
 
         <View
+            android:id="@+id/view1"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_1sdp"
             android:layout_marginTop="@dimen/_6sdp"
@@ -130,7 +131,7 @@
                 app:tint="@color/blue" />
 
             <EditText
-                android:id="@+id/edt_pass"
+                android:id="@+id/edtpass"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_10sdp"
@@ -149,6 +150,7 @@
         </RelativeLayout>
 
         <View
+            android:id="@+id/view2"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_1sdp"
             android:layout_marginTop="@dimen/_6sdp"

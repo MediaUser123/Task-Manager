@@ -65,7 +65,7 @@
                 android:src="@drawable/ic_checkmark"/>
 
             <EditText
-                android:id="@+id/edt_user"
+                android:id="@+id/edtuser"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_10sdp"
@@ -83,6 +83,7 @@
                 android:textSize="@dimen/_11ssp" />
         </RelativeLayout>
         <View
+            android:id="@+id/view1"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_1sdp"
             android:background="#DCDCDC"
@@ -110,7 +111,7 @@
                 android:src="@drawable/ic_email" />
 
             <EditText
-                android:id="@+id/edt_email"
+                android:id="@+id/edtemail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_10sdp"
@@ -128,6 +129,7 @@
                 android:textSize="@dimen/_11ssp" />
         </RelativeLayout>
         <View
+            android:id="@+id/view2"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_1sdp"
             android:background="#DCDCDC"
@@ -163,7 +165,7 @@
                 />
 
             <EditText
-                android:id="@+id/edt_pass"
+                android:id="@+id/edtpass"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_10sdp"
@@ -181,6 +183,7 @@
                 android:textSize="@dimen/_11ssp" />
         </RelativeLayout>
         <View
+            android:id="@+id/view3"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_1sdp"
             android:background="#DCDCDC"

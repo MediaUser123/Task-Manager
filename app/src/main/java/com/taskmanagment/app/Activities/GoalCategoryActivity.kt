@@ -18,6 +18,10 @@ class GoalCategoryActivity : AppCompatActivity() {
         binding = ActivityGoalCategoryBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        binding.arrowBack.setOnClickListener {
+            finish()
+        }
+
         val data = ArrayList<GoalCategoryModel>()
         data.add(GoalCategoryModel(R.drawable.userimg, "Health & Wellness"))
         data.add(GoalCategoryModel(R.drawable.userimg, "Health & Wellness"))

@@ -14,6 +14,10 @@ class AddMilestoneActivity : AppCompatActivity() {
         binding = ActivityAddMilestoneBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        binding.arrowBack.setOnClickListener {
+            finish()
+        }
+
         binding.Donerl.setOnClickListener { finish() }
     }
 }

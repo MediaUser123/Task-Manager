@@ -16,6 +16,10 @@ class MyPlanActivity : AppCompatActivity() {
         binding = ActivityMyPlanBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        binding.arrowBack.setOnClickListener {
+            finish()
+        }
+
         val data = ArrayList<MilestonesModel>()
         data.add(MilestonesModel("Lose 10 lbs",
             "lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy",

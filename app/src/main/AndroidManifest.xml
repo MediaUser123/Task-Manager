@@ -14,11 +14,33 @@
         android:theme="@style/Theme.TaskManagment"
         tools:targetApi="31">
         <activity
-            android:name=".PlanMyDayActivity"
+
+            android:name=".Activities.PlanMyDayActivity"
             android:exported="false" />
         <activity
             android:name=".Activities.AddQuestionActivity"
             android:exported="false" />
+        <activity
+            android:name=".Activities.MyResultActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Activities.AddNoteActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Activities.MyProgressActivity"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
         <activity
             android:name=".Auth.CreatePasswordActivity"
             android:exported="false" />
@@ -36,7 +58,14 @@
             android:exported="false" />
         <activity
             android:name=".Auth.SplashActivity"
-            android:exported="false" />
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
         <activity
             android:name=".Activities.MyPlanActivity"
             android:exported="false">
@@ -82,11 +111,6 @@
         <activity
             android:name=".MainActivity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".StartActivity"
